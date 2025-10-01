@@ -14,7 +14,7 @@
       </ul>
       <router-link
         :to="`/services/${service.slug}`"
-        class="inline-flex items-center gap-2 bg-primary-600 text-white px-6 py-3 rounded-full hover:bg-primary-700 transition-colors font-medium"
+        class="inline-flex items-center gap-2 bg-accent-500 text-white px-6 py-3 rounded-full hover:bg-accent-600 transition-colors font-medium"
       >
         Learn More
         <span>→</span>

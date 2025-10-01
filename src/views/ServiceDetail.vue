@@ -1,6 +1,6 @@
 <template>
   <div v-if="service">
-    <section class="bg-gradient-to-br from-primary-600 to-primary-700 text-white py-20">
+    <section class="bg-gradient-to-br from-primary-500 to-primary-500 text-white py-20">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex items-center gap-4 mb-6">
           <router-link
@@ -39,7 +39,7 @@
             :key="detail.title"
             class="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition-shadow"
           >
-            <h3 class="text-xl font-bold text-primary-700 mb-4">{{ detail.title }}</h3>
+            <h3 class="text-xl font-bold text-primary-500 mb-4">{{ detail.title }}</h3>
             <p class="text-gray-600 leading-relaxed">{{ detail.description }}</p>
           </div>
         </div>
@@ -48,7 +48,7 @@
 
     <section class="py-20 bg-gray-50">
       <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="bg-gradient-to-br from-primary-600 to-primary-700 rounded-3xl p-12 text-white text-center shadow-2xl">
+        <div class="bg-gradient-to-br from-primary-500 to-primary-500 rounded-3xl p-12 text-white text-center shadow-2xl">
           <h2 class="text-3xl font-bold mb-4">Ready to Get Started?</h2>
           <p class="text-xl text-white/90 mb-8">
             Contact us today to learn more about {{ service.title.toLowerCase() }} or to schedule a consultation.
@@ -56,14 +56,14 @@
           <div class="flex flex-col sm:flex-row gap-4 justify-center">
             <a
               href="tel:+35799123456"
-              class="inline-flex items-center justify-center gap-2 bg-white text-primary-700 px-8 py-4 rounded-full hover:bg-primary-50 transition-all font-bold shadow-xl"
+              class="inline-flex items-center justify-center gap-2 bg-white text-primary-500 px-8 py-4 rounded-full hover:bg-gray-100 transition-all font-bold shadow-xl"
             >
               <span>📞</span>
               Call Now
             </a>
             <router-link
               to="/contact"
-              class="inline-flex items-center justify-center gap-2 bg-primary-800 text-white px-8 py-4 rounded-full hover:bg-primary-900 transition-all font-semibold border-2 border-white/30"
+              class="inline-flex items-center justify-center gap-2 bg-secondary-500 text-white px-8 py-4 rounded-full hover:bg-secondary-600 transition-all font-semibold border-2 border-white/30"
             >
               Contact Us
               <span>→</span>
@@ -90,7 +90,7 @@
   <div v-else class="min-h-screen flex items-center justify-center">
     <div class="text-center">
       <h1 class="text-4xl font-bold text-gray-900 mb-4">Service Not Found</h1>
-      <router-link to="/services" class="text-primary-600 hover:text-primary-700 font-semibold">
+      <router-link to="/services" class="text-primary-500 hover:text-primary-500 font-semibold">
         ← Back to Services
       </router-link>
     </div>

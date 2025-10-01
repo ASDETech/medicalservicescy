@@ -5,7 +5,7 @@
         <router-link to="/" class="flex items-center gap-3">
           <img src="/medical-services-cy-logo.png" alt="Medical Services Cyprus" class="h-12 w-auto">
           <div class="hidden md:block">
-            <div class="text-xl font-bold text-primary-700">Medical Services Cyprus</div>
+            <div class="text-xl font-bold text-primary-500">Medical Services Cyprus</div>
             <div class="text-xs text-gray-600">Professional Healthcare Solutions</div>
           </div>
         </router-link>
@@ -13,35 +13,35 @@
         <div class="hidden lg:flex items-center gap-8">
           <router-link
             to="/"
-            class="text-gray-700 hover:text-primary-600 font-medium transition-colors"
-            :class="{ 'text-primary-600': $route.path === '/' }"
+            class="text-gray-700 hover:text-primary-500 font-medium transition-colors"
+            :class="{ 'text-primary-500': $route.path === '/' }"
           >
             Home
           </router-link>
           <router-link
             to="/services"
-            class="text-gray-700 hover:text-primary-600 font-medium transition-colors"
-            :class="{ 'text-primary-600': $route.path.startsWith('/services') }"
+            class="text-gray-700 hover:text-primary-500 font-medium transition-colors"
+            :class="{ 'text-primary-500': $route.path.startsWith('/services') }"
           >
             Services
           </router-link>
           <router-link
             to="/about"
-            class="text-gray-700 hover:text-primary-600 font-medium transition-colors"
-            :class="{ 'text-primary-600': $route.path === '/about' }"
+            class="text-gray-700 hover:text-primary-500 font-medium transition-colors"
+            :class="{ 'text-primary-500': $route.path === '/about' }"
           >
             About
           </router-link>
           <router-link
             to="/contact"
-            class="text-gray-700 hover:text-primary-600 font-medium transition-colors"
-            :class="{ 'text-primary-600': $route.path === '/contact' }"
+            class="text-gray-700 hover:text-primary-500 font-medium transition-colors"
+            :class="{ 'text-primary-500': $route.path === '/contact' }"
           >
             Contact
           </router-link>
           <a
             href="tel:+35799123456"
-            class="bg-primary-600 text-white px-6 py-2.5 rounded-full hover:bg-primary-700 transition-colors font-medium"
+            class="bg-primary-500 text-white px-6 py-2.5 rounded-full hover:bg-secondary-500 transition-colors font-medium"
           >
             Emergency Call
           </a>
@@ -75,7 +75,7 @@
               to="/"
               @click="closeMenu"
               class="px-4 py-2 text-gray-700 hover:bg-gray-50 rounded-md font-medium transition-colors"
-              :class="{ 'bg-primary-50 text-primary-600': $route.path === '/' }"
+              :class="{ 'bg-primary-50 text-primary-500': $route.path === '/' }"
             >
               Home
             </router-link>
@@ -83,7 +83,7 @@
               to="/services"
               @click="closeMenu"
               class="px-4 py-2 text-gray-700 hover:bg-gray-50 rounded-md font-medium transition-colors"
-              :class="{ 'bg-primary-50 text-primary-600': $route.path.startsWith('/services') }"
+              :class="{ 'bg-primary-50 text-primary-500': $route.path.startsWith('/services') }"
             >
               Services
             </router-link>
@@ -91,7 +91,7 @@
               to="/about"
               @click="closeMenu"
               class="px-4 py-2 text-gray-700 hover:bg-gray-50 rounded-md font-medium transition-colors"
-              :class="{ 'bg-primary-50 text-primary-600': $route.path === '/about' }"
+              :class="{ 'bg-primary-50 text-primary-500': $route.path === '/about' }"
             >
               About
             </router-link>
@@ -99,13 +99,13 @@
               to="/contact"
               @click="closeMenu"
               class="px-4 py-2 text-gray-700 hover:bg-gray-50 rounded-md font-medium transition-colors"
-              :class="{ 'bg-primary-50 text-primary-600': $route.path === '/contact' }"
+              :class="{ 'bg-primary-50 text-primary-500': $route.path === '/contact' }"
             >
               Contact
             </router-link>
             <a
               href="tel:+35799123456"
-              class="mx-4 mt-2 bg-primary-600 text-white px-6 py-2.5 rounded-full hover:bg-primary-700 transition-colors font-medium text-center"
+              class="mx-4 mt-2 bg-primary-500 text-white px-6 py-2.5 rounded-full hover:bg-secondary-500 transition-colors font-medium text-center"
             >
               Emergency Call
             </a>

@@ -1,6 +1,6 @@
 <template>
   <div>
-    <section class="bg-gradient-to-br from-primary-600 to-primary-700 text-white py-20">
+    <section class="bg-gradient-to-br from-primary-500 to-primary-500 text-white py-20">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <h1 class="text-4xl md:text-5xl font-bold mb-6">About Medical Services Cyprus</h1>
         <p class="text-xl text-white/90 max-w-3xl mx-auto leading-relaxed">
@@ -27,20 +27,20 @@
             </div>
           </div>
           <div class="grid grid-cols-2 gap-6">
-            <div class="bg-primary-50 rounded-xl p-6 text-center">
-              <div class="text-4xl font-bold text-primary-700 mb-2">15+</div>
+            <div class="bg-gray-100 rounded-xl p-6 text-center">
+              <div class="text-4xl font-bold text-primary-500 mb-2">15+</div>
               <div class="text-gray-600">Years of Experience</div>
             </div>
-            <div class="bg-primary-50 rounded-xl p-6 text-center">
-              <div class="text-4xl font-bold text-primary-700 mb-2">100+</div>
+            <div class="bg-gray-100 rounded-xl p-6 text-center">
+              <div class="text-4xl font-bold text-primary-500 mb-2">100+</div>
               <div class="text-gray-600">Medical Professionals</div>
             </div>
-            <div class="bg-primary-50 rounded-xl p-6 text-center">
-              <div class="text-4xl font-bold text-primary-700 mb-2">24/7</div>
+            <div class="bg-gray-100 rounded-xl p-6 text-center">
+              <div class="text-4xl font-bold text-primary-500 mb-2">24/7</div>
               <div class="text-gray-600">Emergency Service</div>
             </div>
-            <div class="bg-primary-50 rounded-xl p-6 text-center">
-              <div class="text-4xl font-bold text-primary-700 mb-2">10K+</div>
+            <div class="bg-gray-100 rounded-xl p-6 text-center">
+              <div class="text-4xl font-bold text-primary-500 mb-2">10K+</div>
               <div class="text-gray-600">Patients Served</div>
             </div>
           </div>
@@ -87,7 +87,7 @@
         <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-12 text-center">Meet Our CEO</h2>
         <div class="bg-gradient-to-br from-primary-50 to-white rounded-3xl shadow-2xl overflow-hidden">
           <div class="grid md:grid-cols-5 gap-0">
-            <div class="md:col-span-2 bg-gradient-to-br from-primary-600 to-primary-700 p-8 flex items-center justify-center">
+            <div class="md:col-span-2 bg-gradient-to-br from-primary-500 to-primary-500 p-8 flex items-center justify-center">
               <div class="text-center text-white">
                 <div class="w-40 h-40 bg-white/20 backdrop-blur-sm rounded-full mx-auto mb-6 flex items-center justify-center text-6xl border-4 border-white/30">
                   👩‍⚕️
@@ -111,7 +111,7 @@
               </div>
               <a
                 href="#publications"
-                class="inline-flex items-center gap-2 text-primary-600 hover:text-primary-700 font-semibold transition-colors"
+                class="inline-flex items-center gap-2 text-primary-500 hover:text-primary-500 font-semibold transition-colors"
               >
                 View Publications & Research
                 <span>→</span>
@@ -158,14 +158,14 @@
 
     <section class="py-20">
       <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="bg-gradient-to-br from-primary-600 to-primary-700 rounded-3xl p-12 text-white text-center shadow-2xl">
+        <div class="bg-gradient-to-br from-primary-500 to-primary-500 rounded-3xl p-12 text-white text-center shadow-2xl">
           <h2 class="text-3xl font-bold mb-4">Join Our Team</h2>
           <p class="text-xl text-white/90 mb-8">
             We're always looking for talented healthcare professionals to join our growing team.
           </p>
           <router-link
             to="/contact"
-            class="inline-flex items-center justify-center gap-2 bg-white text-primary-700 px-8 py-4 rounded-full hover:bg-primary-50 transition-all font-bold shadow-xl"
+            class="inline-flex items-center justify-center gap-2 bg-white text-primary-500 px-8 py-4 rounded-full hover:bg-gray-100 transition-all font-bold shadow-xl"
           >
             Get in Touch
             <span>→</span>
