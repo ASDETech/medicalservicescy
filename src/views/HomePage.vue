@@ -1,7 +1,7 @@
 <template>
   <div>
     <section class="relative min-h-screen bg-gray-900 text-white py-24 md:py-32 overflow-hidden flex items-center">
-      <div class="absolute inset-0 bg-black/60 z-[1]"></div>
+      <div class="absolute inset-0 bg-black/40 z-[1]"></div>
       <div class="absolute inset-0 z-0">
         <iframe
           class="w-full h-full pointer-events-none"
@@ -16,30 +16,30 @@
           <div class="space-y-6">
             <div class="space-y-4">
               <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
-                <span class="inline-block bg-primary-500 px-6 py-3 rounded-lg shadow-2xl mb-3">Medical Services</span>
-                <span class="inline-block bg-primary-500 px-4 py-3 rounded-lg shadow-2xl mb-3 mx-2">&</span>
+                <span class="inline-block bg-gradient-to-r from-primary-500 to-secondary-500 px-6 py-3 rounded-lg shadow-2xl mb-3 border-2 border-white/30">Medical Services</span>
+                <span class="inline-block bg-gradient-to-r from-primary-500 to-secondary-500 px-4 py-3 rounded-lg shadow-2xl mb-3 mx-2 border-2 border-white/30">&</span>
               </h1>
               <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
-                <span class="inline-block bg-primary-500 px-6 py-3 rounded-lg shadow-2xl">Ambulance Services</span>
+                <span class="inline-block bg-gradient-to-r from-primary-500 to-secondary-500 px-6 py-3 rounded-lg shadow-2xl border-2 border-white/30">Ambulance Services</span>
               </h1>
               <p class="text-2xl md:text-3xl font-semibold pt-2">
-                <span class="inline-block bg-accent-500 px-6 py-3 rounded-lg shadow-2xl">Available 24/7</span>
+                <span class="inline-block bg-gradient-to-r from-accent-500 to-accent-600 px-6 py-3 rounded-lg shadow-2xl border-2 border-white/30">Available 24/7</span>
               </p>
             </div>
-            <p class="text-lg md:text-xl text-white leading-relaxed bg-black/50 px-6 py-4 rounded-lg backdrop-blur-sm">
+            <p class="text-lg md:text-xl text-white leading-relaxed bg-black/70 px-6 py-4 rounded-lg backdrop-blur-md border border-white/20 shadow-2xl">
               Comprehensive healthcare solutions including emergency ambulance services, home care, event medical coverage, and specialized maritime health services across Cyprus.
             </p>
             <div class="flex flex-col sm:flex-row gap-4 pt-4">
               <a
                 href="tel:+35799123456"
-                class="inline-flex items-center justify-center gap-2 bg-white text-primary-500 px-8 py-4 rounded-full hover:bg-gray-100 transition-all font-bold text-lg shadow-xl hover:shadow-2xl hover:scale-105"
+                class="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-white to-gray-100 text-primary-500 px-8 py-4 rounded-full hover:from-primary-500 hover:to-secondary-500 hover:text-white transition-all font-bold text-lg shadow-xl hover:shadow-2xl hover:scale-105 border-2 border-primary-500/50"
               >
                 <span>📞</span>
                 Emergency Call
               </a>
               <router-link
                 to="/services"
-                class="inline-flex items-center justify-center gap-2 bg-accent-500 text-white px-8 py-4 rounded-full hover:bg-accent-600 transition-all font-semibold shadow-xl border-2 border-white/30"
+                class="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-accent-500 to-accent-600 text-white px-8 py-4 rounded-full hover:from-accent-600 hover:to-dark-600 transition-all font-semibold shadow-xl border-2 border-white/50"
               >
                 Our Services
                 <span>→</span>
