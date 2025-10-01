@@ -1,15 +1,32 @@
 <template>
   <div>
-    <section class="relative bg-gradient-to-br from-primary-500 via-secondary-500 to-secondary-600 text-white py-24 md:py-32 overflow-hidden">
-      <div class="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxnIGZpbGw9IiNmZmZmZmYiIGZpbGwtb3BhY2l0eT0iMC4xIj48cGF0aCBkPSJNMzYgMzRjMC0yLjIxLTEuNzktNC00LTRzLTQgMS43OS00IDQgMS43OSA0IDQgNCA0LTEuNzkgNC00em0wLTIwYzAtMi4yMS0xLjc5LTQtNC00cy00IDEuNzktNCA0IDEuNzkgNCA0IDQgNC0xLjc5IDQtNHptLTIwIDBjMC0yLjIxLTEuNzktNC00LTRzLTQgMS43OS00IDQgMS43OSA0IDQgNCA0LTEuNzkgNC00em0wIDIwYzAtMi4yMS0xLjc5LTQtNC00cy00IDEuNzktNCA0IDEuNzkgNCA0IDQgNC0xLjc5IDQtNHptMjAgMGMwLTIuMjEtMS43OS00LTQtNHMtNCAxLjc5LTQgNCA0IDQtMS43OSA0LTR6Ii8+PC9nPjwvZz48L3N2Zz4=')] opacity-20"></div>
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+    <section class="relative min-h-screen bg-gray-900 text-white py-24 md:py-32 overflow-hidden flex items-center">
+      <div class="absolute inset-0 bg-black/60 z-[1]"></div>
+      <div class="absolute inset-0 z-0">
+        <iframe
+          class="w-full h-full pointer-events-none"
+          src="https://www.youtube.com/embed/9EsMv2-9Dk0?autoplay=1&mute=1&loop=1&playlist=9EsMv2-9Dk0&controls=0&showinfo=0&rel=0&modestbranding=1"
+          frameborder="0"
+          allow="autoplay; encrypted-media"
+          allowfullscreen
+        ></iframe>
+      </div>
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
         <div class="grid md:grid-cols-2 gap-12 items-center">
           <div class="space-y-6">
-            <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
-              Professional Medical Services
-              <span class="block text-accent-300">Available 24/7</span>
-            </h1>
-            <p class="text-lg md:text-xl text-white/90 leading-relaxed">
+            <div class="space-y-4">
+              <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
+                <span class="inline-block bg-primary-500 px-6 py-3 rounded-lg shadow-2xl mb-3">Medical Services</span>
+                <span class="inline-block bg-primary-500 px-4 py-3 rounded-lg shadow-2xl mb-3 mx-2">&</span>
+              </h1>
+              <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
+                <span class="inline-block bg-primary-500 px-6 py-3 rounded-lg shadow-2xl">Ambulance Services</span>
+              </h1>
+              <p class="text-2xl md:text-3xl font-semibold pt-2">
+                <span class="inline-block bg-accent-500 px-6 py-3 rounded-lg shadow-2xl">Available 24/7</span>
+              </p>
+            </div>
+            <p class="text-lg md:text-xl text-white leading-relaxed bg-black/50 px-6 py-4 rounded-lg backdrop-blur-sm">
               Comprehensive healthcare solutions including emergency ambulance services, home care, event medical coverage, and specialized maritime health services across Cyprus.
             </p>
             <div class="flex flex-col sm:flex-row gap-4 pt-4">
@@ -22,7 +39,7 @@
               </a>
               <router-link
                 to="/services"
-                class="inline-flex items-center justify-center gap-2 bg-white/20 backdrop-blur-sm text-white px-8 py-4 rounded-full hover:bg-white/30 transition-all font-semibold border-2 border-white/30"
+                class="inline-flex items-center justify-center gap-2 bg-accent-500 text-white px-8 py-4 rounded-full hover:bg-accent-600 transition-all font-semibold shadow-xl border-2 border-white/30"
               >
                 Our Services
                 <span>→</span>
@@ -31,24 +48,24 @@
           </div>
           <div class="hidden md:flex justify-center">
             <div class="relative">
-              <div class="absolute inset-0 bg-white/20 rounded-full blur-3xl"></div>
-              <div class="relative bg-white/10 backdrop-blur-lg rounded-2xl p-8 border border-white/20">
+              <div class="absolute inset-0 bg-primary-500/20 rounded-full blur-3xl"></div>
+              <div class="relative bg-black/40 backdrop-blur-lg rounded-2xl p-8 border-2 border-primary-500/50 shadow-2xl">
                 <div class="grid grid-cols-2 gap-6">
-                  <div class="text-center">
-                    <div class="text-4xl font-bold">24/7</div>
-                    <div class="text-sm text-white/80">Emergency</div>
+                  <div class="text-center bg-primary-500/20 rounded-xl p-4 backdrop-blur-sm">
+                    <div class="text-4xl font-bold text-accent-300">24/7</div>
+                    <div class="text-sm text-white/90">Emergency</div>
                   </div>
-                  <div class="text-center">
-                    <div class="text-4xl font-bold">100+</div>
-                    <div class="text-sm text-white/80">Professionals</div>
+                  <div class="text-center bg-primary-500/20 rounded-xl p-4 backdrop-blur-sm">
+                    <div class="text-4xl font-bold text-accent-300">100+</div>
+                    <div class="text-sm text-white/90">Professionals</div>
                   </div>
-                  <div class="text-center">
-                    <div class="text-4xl font-bold">15+</div>
-                    <div class="text-sm text-white/80">Years Experience</div>
+                  <div class="text-center bg-primary-500/20 rounded-xl p-4 backdrop-blur-sm">
+                    <div class="text-4xl font-bold text-accent-300">15+</div>
+                    <div class="text-sm text-white/90">Years Experience</div>
                   </div>
-                  <div class="text-center">
-                    <div class="text-4xl font-bold">6</div>
-                    <div class="text-sm text-white/80">Core Services</div>
+                  <div class="text-center bg-primary-500/20 rounded-xl p-4 backdrop-blur-sm">
+                    <div class="text-4xl font-bold text-accent-300">6</div>
+                    <div class="text-sm text-white/90">Core Services</div>
                   </div>
                 </div>
               </div>
