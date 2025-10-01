@@ -32,7 +32,7 @@
 
     <section class="py-20">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-12 text-center">Service Details</h2>
+        <h2 class="text-3xl md:text-4xl font-bold text-primary-500 mb-12 text-center">Service Details</h2>
         <div class="grid md:grid-cols-3 gap-8">
           <div
             v-for="detail in service.details"
@@ -75,7 +75,7 @@
 
     <section class="py-20">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 class="text-3xl font-bold text-gray-900 mb-12 text-center">Explore Other Services</h2>
+        <h2 class="text-3xl font-bold text-primary-500 mb-12 text-center">Explore Other Services</h2>
         <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           <ServiceCard
             v-for="otherService in otherServices"
@@ -89,7 +89,7 @@
 
   <div v-else class="min-h-screen flex items-center justify-center">
     <div class="text-center">
-      <h1 class="text-4xl font-bold text-gray-900 mb-4">Service Not Found</h1>
+      <h1 class="text-4xl font-bold text-primary-500 mb-4">Service Not Found</h1>
       <router-link to="/services" class="text-primary-500 hover:text-primary-500 font-semibold">
         ← Back to Services
       </router-link>

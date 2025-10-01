@@ -13,7 +13,7 @@
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="grid lg:grid-cols-2 gap-12">
           <div>
-            <h2 class="text-3xl font-bold text-gray-900 mb-6">Send Us a Message</h2>
+            <h2 class="text-3xl font-bold text-primary-500 mb-6">Send Us a Message</h2>
             <p class="text-gray-600 mb-8 leading-relaxed">
               Fill out the form below and our team will get back to you as soon as possible. For emergencies, please call our 24/7 hotline.
             </p>
@@ -91,7 +91,7 @@
               <button
                 type="submit"
                 :disabled="isSubmitting"
-                class="w-full bg-gray-1000 text-white px-8 py-4 rounded-full hover:bg-gray-1000 transition-all font-bold text-lg shadow-lg hover:shadow-xl disabled:opacity-50 disabled:cursor-not-allowed"
+                class="w-full bg-primary-500 text-white px-8 py-4 rounded-full hover:bg-secondary-500 transition-all font-bold text-lg shadow-lg hover:shadow-xl disabled:opacity-50 disabled:cursor-not-allowed"
               >
                 {{ isSubmitting ? 'Sending...' : 'Send Message' }}
               </button>
@@ -104,14 +104,14 @@
 
           <div class="space-y-8">
             <div>
-              <h2 class="text-3xl font-bold text-gray-900 mb-6">Contact Information</h2>
+              <h2 class="text-3xl font-bold text-primary-500 mb-6">Contact Information</h2>
               <div class="space-y-6">
                 <div class="flex gap-4 items-start">
                   <div class="w-12 h-12 bg-primary-100 rounded-full flex items-center justify-center flex-shrink-0">
                     <span class="text-2xl">📞</span>
                   </div>
                   <div>
-                    <h3 class="font-semibold text-gray-900 mb-1">Emergency Hotline</h3>
+                    <h3 class="font-semibold text-primary-500 mb-1">Emergency Hotline</h3>
                     <a href="tel:+35799123456" class="text-primary-500 hover:text-primary-500 font-medium text-lg">
                       +357 99 123 456
                     </a>
@@ -124,7 +124,7 @@
                     <span class="text-2xl">✉️</span>
                   </div>
                   <div>
-                    <h3 class="font-semibold text-gray-900 mb-1">Email</h3>
+                    <h3 class="font-semibold text-primary-500 mb-1">Email</h3>
                     <a href="mailto:info@medicalservices.cy" class="text-primary-500 hover:text-primary-500 font-medium">
                       info@medicalservices.cy
                     </a>
@@ -137,7 +137,7 @@
                     <span class="text-2xl">📍</span>
                   </div>
                   <div>
-                    <h3 class="font-semibold text-gray-900 mb-1">Location</h3>
+                    <h3 class="font-semibold text-primary-500 mb-1">Location</h3>
                     <p class="text-gray-600">
                       Limassol<br>
                       Cyprus
@@ -150,7 +150,7 @@
                     <span class="text-2xl">⏰</span>
                   </div>
                   <div>
-                    <h3 class="font-semibold text-gray-900 mb-1">Business Hours</h3>
+                    <h3 class="font-semibold text-primary-500 mb-1">Business Hours</h3>
                     <p class="text-gray-600">
                       Emergency Services: 24/7<br>
                       Administrative: Mon-Fri, 9am-5pm
@@ -175,15 +175,15 @@
             </div>
 
             <div class="bg-gray-50 rounded-2xl p-8">
-              <h3 class="text-xl font-bold text-gray-900 mb-4">Follow Us</h3>
+              <h3 class="text-xl font-bold text-primary-500 mb-4">Follow Us</h3>
               <div class="flex gap-4">
-                <a href="#" class="w-12 h-12 bg-white rounded-full flex items-center justify-center hover:bg-gray-1000 hover:text-white transition-all shadow-md hover:shadow-lg">
+                <a href="#" class="w-12 h-12 bg-white rounded-full flex items-center justify-center hover:bg-primary-500 hover:text-white transition-all shadow-md hover:shadow-lg">
                   <span>📘</span>
                 </a>
-                <a href="#" class="w-12 h-12 bg-white rounded-full flex items-center justify-center hover:bg-gray-1000 hover:text-white transition-all shadow-md hover:shadow-lg">
+                <a href="#" class="w-12 h-12 bg-white rounded-full flex items-center justify-center hover:bg-primary-500 hover:text-white transition-all shadow-md hover:shadow-lg">
                   <span>📷</span>
                 </a>
-                <a href="#" class="w-12 h-12 bg-white rounded-full flex items-center justify-center hover:bg-gray-1000 hover:text-white transition-all shadow-md hover:shadow-lg">
+                <a href="#" class="w-12 h-12 bg-white rounded-full flex items-center justify-center hover:bg-primary-500 hover:text-white transition-all shadow-md hover:shadow-lg">
                   <span>💼</span>
                 </a>
               </div>

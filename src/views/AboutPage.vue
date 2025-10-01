@@ -13,7 +13,7 @@
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="grid md:grid-cols-2 gap-12 items-center mb-20">
           <div>
-            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Who We Are</h2>
+            <h2 class="text-3xl md:text-4xl font-bold text-primary-500 mb-6">Who We Are</h2>
             <div class="space-y-4 text-gray-600 leading-relaxed">
               <p>
                 Medical Services Cyprus is a leading provider of comprehensive healthcare solutions across Cyprus. With over 15 years of experience, we have established ourselves as a trusted partner in emergency medical services, specialized care, and medical training.
@@ -47,32 +47,32 @@
         </div>
 
         <div class="bg-gradient-to-br from-gray-50 to-primary-50 rounded-3xl p-12 mb-20">
-          <h2 class="text-3xl font-bold text-gray-900 mb-12 text-center">Our Core Values</h2>
+          <h2 class="text-3xl font-bold text-primary-500 mb-12 text-center">Our Core Values</h2>
           <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             <div class="text-center">
               <div class="text-5xl mb-4">💙</div>
-              <h3 class="text-xl font-bold text-gray-900 mb-3">Compassion</h3>
+              <h3 class="text-xl font-bold text-primary-500 mb-3">Compassion</h3>
               <p class="text-gray-600 text-sm">
                 We treat every patient with empathy, respect, and genuine care.
               </p>
             </div>
             <div class="text-center">
               <div class="text-5xl mb-4">⚡</div>
-              <h3 class="text-xl font-bold text-gray-900 mb-3">Excellence</h3>
+              <h3 class="text-xl font-bold text-primary-500 mb-3">Excellence</h3>
               <p class="text-gray-600 text-sm">
                 We maintain the highest standards in all aspects of our service delivery.
               </p>
             </div>
             <div class="text-center">
               <div class="text-5xl mb-4">🤝</div>
-              <h3 class="text-xl font-bold text-gray-900 mb-3">Integrity</h3>
+              <h3 class="text-xl font-bold text-primary-500 mb-3">Integrity</h3>
               <p class="text-gray-600 text-sm">
                 We operate with honesty, transparency, and ethical principles.
               </p>
             </div>
             <div class="text-center">
               <div class="text-5xl mb-4">🚀</div>
-              <h3 class="text-xl font-bold text-gray-900 mb-3">Innovation</h3>
+              <h3 class="text-xl font-bold text-primary-500 mb-3">Innovation</h3>
               <p class="text-gray-600 text-sm">
                 We embrace new technologies and methods to improve patient care.
               </p>
@@ -84,7 +84,7 @@
 
     <section class="py-20 bg-white">
       <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-12 text-center">Meet Our CEO</h2>
+        <h2 class="text-3xl md:text-4xl font-bold text-primary-500 mb-12 text-center">Meet Our CEO</h2>
         <div class="bg-gradient-to-br from-primary-50 to-white rounded-3xl shadow-2xl overflow-hidden">
           <div class="grid md:grid-cols-5 gap-0">
             <div class="md:col-span-2 bg-gradient-to-br from-primary-500 to-primary-500 p-8 flex items-center justify-center">
@@ -97,7 +97,7 @@
               </div>
             </div>
             <div class="md:col-span-3 p-8 md:p-12">
-              <h4 class="text-2xl font-bold text-gray-900 mb-4">Leadership & Vision</h4>
+              <h4 class="text-2xl font-bold text-primary-500 mb-4">Leadership & Vision</h4>
               <div class="space-y-4 text-gray-600 leading-relaxed mb-6">
                 <p>
                   Milada Alexandrou brings over two decades of healthcare leadership experience to Medical Services Cyprus. With a background in emergency medicine and healthcare administration, she has been instrumental in establishing our organization as a premier provider of medical services in Cyprus.
@@ -125,7 +125,7 @@
     <section class="py-20 bg-gray-50">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-16">
-          <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Why Choose Us</h2>
+          <h2 class="text-3xl md:text-4xl font-bold text-primary-500 mb-4">Why Choose Us</h2>
           <p class="text-lg text-gray-600 max-w-2xl mx-auto">
             We combine expertise, technology, and compassion to deliver exceptional medical care
           </p>
@@ -133,21 +133,21 @@
         <div class="grid md:grid-cols-3 gap-8">
           <div class="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition-shadow">
             <div class="text-4xl mb-4">🏆</div>
-            <h3 class="text-xl font-bold text-gray-900 mb-3">Certified Excellence</h3>
+            <h3 class="text-xl font-bold text-primary-500 mb-3">Certified Excellence</h3>
             <p class="text-gray-600 leading-relaxed">
               Our team holds international certifications and follows global best practices in medical care and emergency response.
             </p>
           </div>
           <div class="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition-shadow">
             <div class="text-4xl mb-4">🔧</div>
-            <h3 class="text-xl font-bold text-gray-900 mb-3">Advanced Equipment</h3>
+            <h3 class="text-xl font-bold text-primary-500 mb-3">Advanced Equipment</h3>
             <p class="text-gray-600 leading-relaxed">
               We invest in cutting-edge medical technology and maintain our equipment to the highest standards.
             </p>
           </div>
           <div class="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition-shadow">
             <div class="text-4xl mb-4">⏰</div>
-            <h3 class="text-xl font-bold text-gray-900 mb-3">Rapid Response</h3>
+            <h3 class="text-xl font-bold text-primary-500 mb-3">Rapid Response</h3>
             <p class="text-gray-600 leading-relaxed">
               Our strategically positioned teams ensure the fastest possible response times across Cyprus.
             </p>

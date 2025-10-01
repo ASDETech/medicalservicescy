@@ -22,13 +22,13 @@
         <div class="bg-white rounded-2xl shadow-lg p-8 md:p-12">
           <div class="grid md:grid-cols-2 gap-8 items-center">
             <div>
-              <h2 class="text-3xl font-bold text-gray-900 mb-4">Need Help Choosing a Service?</h2>
+              <h2 class="text-3xl font-bold text-primary-500 mb-4">Need Help Choosing a Service?</h2>
               <p class="text-gray-600 mb-6 leading-relaxed">
                 Our team is here to guide you in selecting the right medical service for your needs. Contact us for personalized recommendations.
               </p>
               <router-link
                 to="/contact"
-                class="inline-flex items-center gap-2 bg-gray-1000 text-white px-8 py-3 rounded-full hover:bg-gray-1000 transition-colors font-semibold"
+                class="inline-flex items-center gap-2 bg-primary-500 text-white px-8 py-3 rounded-full hover:bg-primary-500 transition-colors font-semibold"
               >
                 Get in Touch
                 <span>→</span>
