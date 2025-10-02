@@ -13,5 +13,72 @@
   },
   "footer": {
     "copyright": "© 2025 Medical Services Cyprus. All rights reserved."
+  },
+  "home": {
+    "hero": {
+      "title": "Your Health, Our Priority",
+      "subtitle": "Always next to you 24/7",
+      "cta": "Book Online"
+    },
+    "services": {
+      "title": "Our Services",
+      "subtitle": "Professional medical services at your doorstep"
+    }
+  },
+  "about": {
+    "title": "About Medical Services Cyprus",
+    "subtitle": "Your trusted healthcare partner",
+    "mission": {
+      "title": "Our Mission",
+      "text": "We are dedicated to providing exceptional medical services and ambulance support across Cyprus. Our mission is to ensure every patient receives timely, professional, and compassionate care whenever they need it."
+    },
+    "values": {
+      "title": "Our Values",
+      "quality": "Quality Care",
+      "qualityText": "Delivering the highest standard of medical services",
+      "available": "24/7 Availability",
+      "availableText": "Always ready to respond to your medical needs",
+      "professional": "Professional Team",
+      "professionalText": "Experienced and certified medical professionals",
+      "trust": "Trust & Safety",
+      "trustText": "Your health and safety are our top priorities"
+    }
+  },
+  "services": {
+    "title": "Our Services",
+    "subtitle": "Comprehensive medical services tailored to your needs",
+    "ambulance": {
+      "title": "Ambulance Services",
+      "description": "Emergency and non-emergency medical transportation available 24/7"
+    },
+    "homecare": {
+      "title": "Home Care",
+      "description": "Professional medical care in the comfort of your home"
+    },
+    "emergency": {
+      "title": "Emergency Response",
+      "description": "Rapid response team for critical medical situations"
+    },
+    "consultation": {
+      "title": "Medical Consultation",
+      "description": "Expert medical advice and consultation services"
+    }
+  },
+  "contact": {
+    "title": "Contact Us",
+    "subtitle": "Get in touch with us anytime",
+    "form": {
+      "name": "Full Name",
+      "email": "Email Address",
+      "phone": "Phone Number",
+      "message": "Your Message",
+      "submit": "Send Message",
+      "success": "Thank you! We will contact you soon."
+    },
+    "info": {
+      "title": "Contact Information",
+      "address": "Cyprus",
+      "emergency": "Emergency Hotline"
+    }
   }
 }
