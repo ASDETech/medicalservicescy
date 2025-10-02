@@ -3,6 +3,15 @@
     "home": "Home",
     "about": "About",
     "services": "Services",
-    "contact": "Contact"
+    "contact": "Contact",
+    "bookOnline": "Book Online"
+  },
+  "topBar": {
+    "tagline": "Always next to you 24/7",
+    "email": "info@medicalservicescy.com",
+    "phone": "+357 7000 68 86"
+  },
+  "footer": {
+    "copyright": "© 2025 Medical Services Cyprus. All rights reserved."
   }
 }
