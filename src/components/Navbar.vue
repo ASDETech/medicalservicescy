@@ -1,13 +1,9 @@
 <template>
-  <nav class="bg-white shadow-md sticky top-0 z-50">
+  <nav class="bg-white shadow-lg sticky top-0 z-50 border-b-2 border-accent-500">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex justify-between items-center h-20">
-        <router-link to="/" class="flex items-center gap-3">
-          <img src="/images/medical-services-cy-logo.png" alt="Medical Services Cyprus" class="h-12 w-auto">
-          <div class="hidden md:block">
-            <div class="text-xl font-bold text-primary-500">Medical Services Cyprus</div>
-            <div class="text-xs text-gray-600">& ambulance services</div>
-          </div>
+        <router-link to="/" class="flex items-center gap-3 group">
+          <img src="/images/medical-services-cy-logo copy.png" alt="Medical Services Cyprus" class="h-14 w-auto transition-transform duration-300 group-hover:scale-110">
         </router-link>
 
         <div class="hidden lg:flex items-center gap-8">
@@ -41,7 +37,7 @@
           </router-link>
           <a
             href="#book"
-            class="bg-primary-500 text-white px-6 py-2.5 rounded-full hover:bg-secondary-500 transition-colors font-medium"
+            class="bg-gradient-to-r from-primary-500 to-secondary-500 text-white px-6 py-2.5 rounded-full hover:shadow-lg hover:scale-105 transition-all duration-300 font-medium"
           >
             {{ $t('nav.bookOnline') }}
           </a>
@@ -105,7 +101,7 @@
             </router-link>
             <a
               href="#book"
-              class="mx-4 mt-2 bg-primary-500 text-white px-6 py-2.5 rounded-full hover:bg-secondary-500 transition-colors font-medium text-center"
+              class="mx-4 mt-2 bg-gradient-to-r from-primary-500 to-secondary-500 text-white px-6 py-2.5 rounded-full hover:shadow-lg transition-all duration-300 font-medium text-center"
             >
               {{ $t('nav.bookOnline') }}
             </a>

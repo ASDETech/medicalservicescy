@@ -11,9 +11,9 @@
       </div>
     </section>
 
-    <section class="py-16">
+    <section class="py-16 bg-gradient-to-br from-gray-50 to-white">
       <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="bg-white rounded-lg shadow-lg p-8">
+        <div class="bg-white rounded-2xl shadow-2xl p-8 border-t-4 border-accent-500">
           <h2 class="text-3xl font-bold text-gray-900 mb-2 text-center">
             {{ $t('contact.booking.title') }}
           </h2>
@@ -127,16 +127,16 @@
             <button
               type="submit"
               :disabled="bookingLoading"
-              class="w-full bg-primary-500 text-white py-4 px-6 rounded-lg font-semibold hover:bg-secondary-500 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl disabled:opacity-50 disabled:cursor-not-allowed"
+              class="w-full bg-gradient-to-r from-primary-500 to-secondary-500 text-white py-4 px-6 rounded-lg font-semibold hover:shadow-2xl transition-all duration-300 transform hover:scale-105 disabled:opacity-50 disabled:cursor-not-allowed"
             >
               {{ bookingLoading ? 'Processing...' : $t('contact.booking.submit') }}
             </button>
 
-            <div v-if="bookingSuccess" class="bg-green-50 border border-green-200 rounded-lg p-4 text-green-800">
+            <div v-if="bookingSuccess" class="bg-gradient-to-r from-green-50 to-accent-50 border-2 border-accent-500 rounded-lg p-4 text-accent-800 font-semibold">
               {{ $t('contact.booking.success') }}
             </div>
 
-            <div v-if="bookingError" class="bg-red-50 border border-red-200 rounded-lg p-4 text-red-800">
+            <div v-if="bookingError" class="bg-gradient-to-r from-red-50 to-primary-50 border-2 border-primary-500 rounded-lg p-4 text-primary-800 font-semibold">
               {{ $t('contact.booking.error') }}
             </div>
           </form>

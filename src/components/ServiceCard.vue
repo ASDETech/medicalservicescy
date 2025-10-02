@@ -1,9 +1,9 @@
 <template>
   <router-link
     :to="`/services/${service.slug}`"
-    class="bg-white rounded-lg shadow-md hover:shadow-xl transition-all duration-300 transform hover:scale-105 p-6 flex flex-col group"
+    class="bg-gradient-to-br from-white to-gray-50 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:scale-105 hover:-translate-y-1 p-6 flex flex-col group border-2 border-transparent hover:border-accent-500"
   >
-    <div class="w-16 h-16 rounded-full bg-primary-100 flex items-center justify-center mb-4 group-hover:bg-primary-500 transition-colors mx-auto">
+    <div class="w-16 h-16 rounded-full bg-gradient-to-br from-primary-100 to-secondary-100 flex items-center justify-center mb-4 group-hover:bg-gradient-to-br group-hover:from-primary-500 group-hover:to-secondary-500 transition-all duration-300 mx-auto shadow-md group-hover:shadow-lg">
       <svg v-if="service.icon === 'homecare'" class="w-8 h-8 text-primary-500 group-hover:text-white transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/>
       </svg>
@@ -26,15 +26,15 @@
     <p class="text-gray-600 text-sm mb-4 text-center flex-grow">
       {{ service.description }}
     </p>
-    <div v-if="service.pricing" class="bg-accent-50 rounded-lg p-3 mb-4">
-      <p class="text-accent-600 font-semibold text-sm text-center">
+    <div v-if="service.pricing" class="bg-gradient-to-r from-accent-50 to-accent-100 rounded-lg p-3 mb-4 border border-accent-300">
+      <p class="text-accent-700 font-bold text-sm text-center">
         {{ service.pricing }}
       </p>
     </div>
-    <div class="flex items-center justify-center text-primary-500 group-hover:text-secondary-500 font-semibold text-sm transition-colors">
+    <div class="flex items-center justify-center text-primary-500 group-hover:text-secondary-500 font-bold text-sm transition-colors">
       {{ $t('services.learnMore') }}
-      <svg class="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+      <svg class="w-5 h-5 ml-2 group-hover:translate-x-2 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.5">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/>
       </svg>
     </div>
   </router-link>
