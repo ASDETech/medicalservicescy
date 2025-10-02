@@ -1,16 +1,6 @@
 <template>
-  <div class="relative w-full min-h-[70vh] md:min-h-[85vh] overflow-hidden">
-    <video
-      autoplay
-      muted
-      loop
-      playsinline
-      class="absolute inset-0 w-full h-full object-cover"
-    >
-      <source src="/videos/hero.mp4" type="video/mp4">
-    </video>
-
-    <div class="absolute inset-0 bg-black/50"></div>
+  <div class="relative w-full min-h-[70vh] md:min-h-[85vh] overflow-hidden bg-gradient-to-br from-primary-600 via-primary-500 to-secondary-500">
+    <div class="absolute inset-0 bg-black/30"></div>
 
     <div class="relative z-10 flex flex-col items-center justify-center h-full min-h-[70vh] md:min-h-[85vh] px-4 sm:px-6 lg:px-8 text-center">
       <h1 class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-4 md:mb-6 max-w-5xl leading-tight">

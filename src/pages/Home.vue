@@ -1,8 +1,9 @@
 <template>
   <div>
-    <h1>Home</h1>
+    <VideoHero />
   </div>
 </template>
 
 <script setup lang="ts">
+import VideoHero from '../components/VideoHero.vue'
 </script>
