@@ -47,21 +47,27 @@
   "services": {
     "title": "Our Services",
     "subtitle": "Comprehensive medical services tailored to your needs",
-    "ambulance": {
-      "title": "Ambulance Services",
-      "description": "Emergency and non-emergency medical transportation available 24/7"
-    },
+    "learnMore": "Learn More",
     "homecare": {
       "title": "Home Care",
-      "description": "Professional medical care in the comfort of your home"
+      "description": "Personalized healthcare services delivered to your home or hotel with professional medical staff"
     },
-    "emergency": {
-      "title": "Emergency Response",
-      "description": "Rapid response team for critical medical situations"
+    "ambulance": {
+      "title": "Ambulance Transports",
+      "description": "Emergency and scheduled ambulance services available 24/7 across Cyprus"
     },
-    "consultation": {
-      "title": "Medical Consultation",
-      "description": "Expert medical advice and consultation services"
+    "events": {
+      "title": "Ambulance Events",
+      "description": "On-site ambulance and medical coverage for events, ensuring safety and peace of mind"
+    },
+    "wheelchair": {
+      "title": "Wheelchair Accessibility Car",
+      "description": "Safe and comfortable transport for individuals with mobility disabilities"
+    },
+    "equipment": {
+      "title": "Equipment Rental",
+      "description": "Medical equipment for short-term use including wheelchairs, crutches, and oxygen concentrators",
+      "pricing": "Starting from €15/day"
     }
   },
   "contact": {
