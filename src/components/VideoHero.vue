@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h2>Video Hero</h2>
+    <h2>VideoHero</h2>
   </div>
 </template>
 

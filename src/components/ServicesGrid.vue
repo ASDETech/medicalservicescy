@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h2>Services Grid</h2>
+    <h2>ServicesGrid</h2>
   </div>
 </template>
 

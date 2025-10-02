@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h3>Service Card</h3>
+    <h3>ServiceCard</h3>
   </div>
 </template>
 

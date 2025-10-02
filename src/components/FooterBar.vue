@@ -1,6 +1,6 @@
 <template>
   <footer>
-    <h2>Footer Bar</h2>
+    <h2>FooterBar</h2>
   </footer>
 </template>
 
