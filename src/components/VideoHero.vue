@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h3>Service Card</h3>
+    <h2>Video Hero</h2>
   </div>
 </template>
 

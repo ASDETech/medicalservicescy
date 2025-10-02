@@ -1,7 +1,7 @@
 <template>
-  <div>
-    <h3>Service Card</h3>
-  </div>
+  <footer>
+    <h2>Footer Bar</h2>
+  </footer>
 </template>
 
 <script setup lang="ts">

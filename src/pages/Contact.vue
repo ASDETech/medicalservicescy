@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h3>Service Card</h3>
+    <h1>{{ $t('contact.title') }}</h1>
   </div>
 </template>
 
