@@ -12,6 +12,139 @@
     </section>
 
     <section class="py-16">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="bg-white rounded-lg shadow-lg p-8">
+          <h2 class="text-3xl font-bold text-gray-900 mb-2 text-center">
+            {{ $t('contact.booking.title') }}
+          </h2>
+          <p class="text-gray-600 mb-8 text-center">
+            {{ $t('contact.booking.subtitle') }}
+          </p>
+          <form @submit.prevent="handleBookingSubmit" class="space-y-6">
+            <div>
+              <label for="service" class="block text-sm font-medium text-gray-700 mb-2">
+                {{ $t('contact.booking.service') }}
+              </label>
+              <select
+                id="service"
+                v-model="bookingForm.service"
+                required
+                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent"
+              >
+                <option value="">{{ $t('contact.booking.servicePlaceholder') }}</option>
+                <option value="homecare">{{ $t('services.homecare.title') }}</option>
+                <option value="ambulance">{{ $t('services.ambulance.title') }}</option>
+                <option value="events">{{ $t('services.events.title') }}</option>
+                <option value="wheelchair">{{ $t('services.wheelchair.title') }}</option>
+                <option value="equipment">{{ $t('services.equipment.title') }}</option>
+              </select>
+            </div>
+
+            <div>
+              <label for="location" class="block text-sm font-medium text-gray-700 mb-2">
+                {{ $t('contact.booking.location') }}
+              </label>
+              <input
+                id="location"
+                v-model="bookingForm.location"
+                type="text"
+                required
+                :placeholder="$t('contact.booking.locationPlaceholder')"
+                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent"
+              />
+            </div>
+
+            <div>
+              <label for="datetime" class="block text-sm font-medium text-gray-700 mb-2">
+                {{ $t('contact.booking.datetime') }}
+              </label>
+              <input
+                id="datetime"
+                v-model="bookingForm.datetime"
+                type="datetime-local"
+                required
+                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent"
+              />
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div>
+                <label for="booking-name" class="block text-sm font-medium text-gray-700 mb-2">
+                  {{ $t('contact.booking.name') }}
+                </label>
+                <input
+                  id="booking-name"
+                  v-model="bookingForm.name"
+                  type="text"
+                  required
+                  :placeholder="$t('contact.booking.namePlaceholder')"
+                  class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent"
+                />
+              </div>
+
+              <div>
+                <label for="booking-phone" class="block text-sm font-medium text-gray-700 mb-2">
+                  {{ $t('contact.booking.phone') }}
+                </label>
+                <input
+                  id="booking-phone"
+                  v-model="bookingForm.phone"
+                  type="tel"
+                  required
+                  :placeholder="$t('contact.booking.phonePlaceholder')"
+                  class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent"
+                />
+              </div>
+            </div>
+
+            <div>
+              <label for="booking-email" class="block text-sm font-medium text-gray-700 mb-2">
+                {{ $t('contact.booking.email') }}
+              </label>
+              <input
+                id="booking-email"
+                v-model="bookingForm.email"
+                type="email"
+                required
+                :placeholder="$t('contact.booking.emailPlaceholder')"
+                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent"
+              />
+            </div>
+
+            <div>
+              <label for="notes" class="block text-sm font-medium text-gray-700 mb-2">
+                {{ $t('contact.booking.notes') }}
+              </label>
+              <textarea
+                id="notes"
+                v-model="bookingForm.notes"
+                rows="4"
+                :placeholder="$t('contact.booking.notesPlaceholder')"
+                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent"
+              ></textarea>
+            </div>
+
+            <button
+              type="submit"
+              :disabled="bookingLoading"
+              class="w-full bg-primary-500 text-white py-4 px-6 rounded-lg font-semibold hover:bg-secondary-500 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl disabled:opacity-50 disabled:cursor-not-allowed"
+            >
+              {{ bookingLoading ? 'Processing...' : $t('contact.booking.submit') }}
+            </button>
+
+            <div v-if="bookingSuccess" class="bg-green-50 border border-green-200 rounded-lg p-4 text-green-800">
+              {{ $t('contact.booking.success') }}
+            </div>
+
+            <div v-if="bookingError" class="bg-red-50 border border-red-200 rounded-lg p-4 text-red-800">
+              {{ $t('contact.booking.error') }}
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-16 bg-gray-50">
       <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
           <div>
@@ -160,6 +293,58 @@
 
 <script setup lang="ts">
 import { ref } from 'vue'
+
+const bookingForm = ref({
+  service: '',
+  location: '',
+  datetime: '',
+  name: '',
+  phone: '',
+  email: '',
+  notes: ''
+})
+
+const bookingLoading = ref(false)
+const bookingSuccess = ref(false)
+const bookingError = ref(false)
+
+const handleBookingSubmit = async () => {
+  bookingLoading.value = true
+  bookingSuccess.value = false
+  bookingError.value = false
+
+  try {
+    const response = await fetch('/api/book', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(bookingForm.value)
+    })
+
+    if (response.ok) {
+      bookingSuccess.value = true
+      bookingForm.value = {
+        service: '',
+        location: '',
+        datetime: '',
+        name: '',
+        phone: '',
+        email: '',
+        notes: ''
+      }
+      setTimeout(() => {
+        bookingSuccess.value = false
+      }, 5000)
+    } else {
+      bookingError.value = true
+    }
+  } catch (error) {
+    bookingError.value = true
+  } finally {
+    bookingLoading.value = false
+  }
+}
 
 const form = ref({
   name: '',

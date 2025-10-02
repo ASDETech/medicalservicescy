@@ -88,6 +88,26 @@
       "submit": "Send Message",
       "success": "Thank you! We will contact you soon."
     },
+    "booking": {
+      "title": "Book a Service",
+      "subtitle": "Schedule your medical service appointment",
+      "service": "Type of Service",
+      "servicePlaceholder": "Select a service",
+      "location": "Location / Address",
+      "locationPlaceholder": "Enter your address",
+      "datetime": "Date & Time",
+      "name": "Full Name",
+      "namePlaceholder": "Enter your full name",
+      "phone": "Phone Number",
+      "phonePlaceholder": "Enter your phone number",
+      "email": "Email Address",
+      "emailPlaceholder": "Enter your email address",
+      "notes": "Additional Notes",
+      "notesPlaceholder": "Any special requirements or information",
+      "submit": "Book Appointment",
+      "success": "Booking successful! We will contact you shortly to confirm your appointment.",
+      "error": "Booking failed. Please try again or contact us directly."
+    },
     "info": {
       "title": "Contact Information",
       "address": "Cyprus",
