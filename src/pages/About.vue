@@ -27,6 +27,40 @@
     <section class="py-16 bg-gray-50">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 class="text-3xl md:text-4xl font-bold text-gray-900 text-center mb-12">
+          {{ $t('about.ceo.title') }}
+        </h2>
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div class="order-2 lg:order-1">
+            <div class="rounded-lg shadow-xl w-full bg-gradient-to-br from-primary-100 to-secondary-100 aspect-square flex items-center justify-center">
+              <svg class="w-32 h-32 text-primary-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/>
+              </svg>
+            </div>
+          </div>
+          <div class="order-1 lg:order-2">
+            <h3 class="text-3xl font-bold text-gray-900 mb-2">
+              {{ $t('about.ceo.name') }}
+            </h3>
+            <p class="text-xl text-primary-500 font-semibold mb-6">
+              {{ $t('about.ceo.position') }}
+            </p>
+            <p class="text-lg text-gray-700 leading-relaxed mb-8">
+              {{ $t('about.ceo.bio') }}
+            </p>
+            <router-link
+              to="/shop"
+              class="inline-block bg-primary-500 text-white px-8 py-3 rounded-lg font-semibold hover:bg-secondary-500 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
+            >
+              {{ $t('about.ceo.cta') }}
+            </router-link>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-16">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-900 text-center mb-12">
           {{ $t('about.values.title') }}
         </h2>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">

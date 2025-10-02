@@ -32,6 +32,13 @@
       "title": "Our Mission",
       "text": "We are dedicated to providing exceptional medical services and ambulance support across Cyprus. Our mission is to ensure every patient receives timely, professional, and compassionate care whenever they need it."
     },
+    "ceo": {
+      "title": "Leadership",
+      "name": "MSc. Milada Alexandrou PhD., MBA, DBA",
+      "position": "Chief Executive Officer",
+      "bio": "With over two decades of experience in healthcare management and emergency medical services, Dr. Alexandrou leads Medical Services Cyprus with a vision of excellence and innovation. Her academic background and practical expertise ensure our organization maintains the highest standards of patient care and operational efficiency. Under her leadership, we have expanded our services across Cyprus, establishing ourselves as a trusted name in emergency and non-emergency medical care.",
+      "cta": "View Publications"
+    },
     "values": {
       "title": "Our Values",
       "quality": "Quality Care",
