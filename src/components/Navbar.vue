@@ -6,40 +6,62 @@
           <img src="/images/medical-services-cy-logo copy.png" alt="Medical Services Cyprus" class="h-14 w-auto transition-transform duration-300 group-hover:scale-110">
         </router-link>
 
-        <div class="hidden lg:flex items-center gap-8">
+        <div class="hidden lg:flex items-center gap-2">
           <router-link
             to="/"
-            class="text-gray-700 hover:text-primary-500 font-medium transition-colors"
-            :class="{ 'text-primary-500': $route.path === '/' }"
+            class="relative px-4 py-2 text-gray-700 font-medium transition-all duration-300 rounded-lg hover:bg-gray-50 group"
+            :class="{ 'text-primary-600 bg-primary-50': $route.path === '/' }"
           >
-            {{ $t('nav.home') }}
+            <span class="relative z-10">{{ $t('nav.home') }}</span>
+            <span
+              class="absolute bottom-0 left-1/2 -translate-x-1/2 w-0 h-0.5 bg-primary-500 transition-all duration-300 group-hover:w-3/4"
+              :class="{ 'w-3/4': $route.path === '/' }"
+            ></span>
           </router-link>
           <router-link
             to="/services"
-            class="text-gray-700 hover:text-primary-500 font-medium transition-colors"
-            :class="{ 'text-primary-500': $route.path.startsWith('/services') }"
+            class="relative px-4 py-2 text-gray-700 font-medium transition-all duration-300 rounded-lg hover:bg-gray-50 group"
+            :class="{ 'text-primary-600 bg-primary-50': $route.path.startsWith('/services') }"
           >
-            {{ $t('nav.services') }}
+            <span class="relative z-10">{{ $t('nav.services') }}</span>
+            <span
+              class="absolute bottom-0 left-1/2 -translate-x-1/2 w-0 h-0.5 bg-primary-500 transition-all duration-300 group-hover:w-3/4"
+              :class="{ 'w-3/4': $route.path.startsWith('/services') }"
+            ></span>
           </router-link>
           <router-link
             to="/about"
-            class="text-gray-700 hover:text-primary-500 font-medium transition-colors"
-            :class="{ 'text-primary-500': $route.path === '/about' }"
+            class="relative px-4 py-2 text-gray-700 font-medium transition-all duration-300 rounded-lg hover:bg-gray-50 group"
+            :class="{ 'text-primary-600 bg-primary-50': $route.path === '/about' }"
           >
-            {{ $t('nav.about') }}
+            <span class="relative z-10">{{ $t('nav.about') }}</span>
+            <span
+              class="absolute bottom-0 left-1/2 -translate-x-1/2 w-0 h-0.5 bg-primary-500 transition-all duration-300 group-hover:w-3/4"
+              :class="{ 'w-3/4': $route.path === '/about' }"
+            ></span>
           </router-link>
           <router-link
             to="/contact"
-            class="text-gray-700 hover:text-primary-500 font-medium transition-colors"
-            :class="{ 'text-primary-500': $route.path === '/contact' }"
+            class="relative px-4 py-2 text-gray-700 font-medium transition-all duration-300 rounded-lg hover:bg-gray-50 group"
+            :class="{ 'text-primary-600 bg-primary-50': $route.path === '/contact' }"
           >
-            {{ $t('nav.contact') }}
+            <span class="relative z-10">{{ $t('nav.contact') }}</span>
+            <span
+              class="absolute bottom-0 left-1/2 -translate-x-1/2 w-0 h-0.5 bg-primary-500 transition-all duration-300 group-hover:w-3/4"
+              :class="{ 'w-3/4': $route.path === '/contact' }"
+            ></span>
           </router-link>
           <a
             href="#book"
-            class="bg-gradient-to-r from-primary-500 to-secondary-500 text-white px-6 py-2.5 rounded-full hover:shadow-lg hover:scale-105 transition-all duration-300 font-medium"
+            class="ml-4 relative overflow-hidden bg-gradient-to-r from-primary-500 to-secondary-500 text-white px-8 py-3 rounded-full font-semibold shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-0.5 active:translate-y-0 group"
           >
-            {{ $t('nav.bookOnline') }}
+            <span class="relative z-10 flex items-center gap-2">
+              {{ $t('nav.bookOnline') }}
+              <svg class="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+              </svg>
+            </span>
+            <span class="absolute inset-0 bg-gradient-to-r from-primary-600 to-secondary-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
           </a>
         </div>
 
